@@ -7,7 +7,7 @@ SRC = main.cpp \
 	newZombie.cpp \
 	randomChump.cpp
 
-OBJ = ${SRC:.c=.o}
+OBJ = ${SRC:.cpp=.o}
 
 all: $(NAME)
 

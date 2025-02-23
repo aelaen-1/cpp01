@@ -1,12 +1,9 @@
 #include "Zombie.hpp"
 
+//It creates a zombie, name it, and return it so you can use it outside of the function scope
 Zombie* newZombie(std::string name)
 {
-    Zombie* new_zombie;
+    Zombie* zomb = new Zombie(name);
 
-    new_zombie = new Zombie*;
-
-    Zombie->name = name;
-    
-    return (Zombie);
+    return (zomb);
 }
