@@ -10,7 +10,17 @@ HumanA::~HumanA()
 
 }
 
+void    HumanA::setName(std::string n)
+{
+    this->name = n;
+}
+
+std::string    HumanA::getName()
+{
+    return (this->name);
+}
+
 void    HumanA::attack()
 {
-    std::cout << this->name << " attacks with their " << this->weapon->type << std::endl;
+    std::cout << this->name << " attacks with their " << this->weapon.getType() << std::endl;
 }

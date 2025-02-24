@@ -13,6 +13,8 @@ private:
 public:
     HumanA();
     ~HumanA();
+    void    setName(std::string n);
+    std::string    getName();
     void    attack();
 };
 
