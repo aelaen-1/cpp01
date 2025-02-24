@@ -16,6 +16,7 @@ public:
     void    setName(std::string n);
     std::string    getName();
     void    attack();
+    Weapon& getWeapon();
 };
 
 #endif

@@ -2,7 +2,7 @@
 
 Weapon::Weapon()
 {
-
+    this->type = "default";
 }
 
 Weapon::~Weapon()
