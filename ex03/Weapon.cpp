@@ -1,16 +1,17 @@
 #include "include/Weapon.hpp"
 
 Weapon::Weapon()
+: type("default weapon")
 {
-    this->type = "default";
 }
 
-Weapon::~Weapon()
+Weapon::Weapon(std::string  typeInit)
 {
-    
+    this->type = typeInit;
 }
 
-const std::string& Weapon::getType()
+
+const std::string& Weapon::getType() const
 {
     return (this->type);
 }
