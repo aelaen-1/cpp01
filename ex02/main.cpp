@@ -16,7 +16,7 @@
 //dans une autre fonction, permet de modifier sa valeur sans dereferencer
 // evite le passage par copie qui prend des ressources 
 // Par rapport au pointeur qui peut pointer sur une variable qui n'existe plus,
-//  la reference n'existe plus si la variable est detruite.
+//  la reference n'existe plus si la variable est detruite(évite aussi d'oubler de free).
 // Permet donc d'eviter les erreurs sur les pointeurs quand 
 // on a la possibilite d'utiliser des references : a privilegier
 int main()
