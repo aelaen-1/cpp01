@@ -3,17 +3,27 @@
 int main (int ac, char **argv)
 {
     if (ac != 2)
+        return (std::cout << "One argument only:  ./harlFilter 'message'" << std::endl, 0);
+    Harl    harl;
+    
+    harl.msg = harl.setType(argv[1]);
+    switch (harl.msg)
     {
-        std::cout << "One argument only:  ./harlFilter 'message'" << std::endl;
-        return (0);
+        case DEBUG:
+            harl.complain("DEBUG");
+            break;
+        case INFO:
+            harl.complain("INFO");
+            break;
+        case WARNING:
+            harl.complain("WARNING");
+            break;
+        case ERROR:
+            harl.complain("ERROR");
+            break;
+        default:
+            harl.complain("");
+            break;
     }
-
-    std::string message = argv[1];
-    if (message.compare("DEBUG") && message.compare("INFO") && message.compare("WARNING") &&message.compare("ERROR"))
-    {
-        std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
-        return (0);
-    }
-    std::cout << "[ " << argv[1] << "]" << std::endl;
     return (0);
 }
