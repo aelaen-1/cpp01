@@ -1,6 +1,10 @@
 #include "include/HumanA.hpp"
 #include "include/HumanB.hpp"
 
+
+// par rapport au pointeur, la reference doit etre initialisée obligatoirement
+// car on ne peut avoir de ref sur un objet nul. Je dois donc ici initialiser
+// une weapon alors qu'il se peut qu'il n'y en ait pas, voir vidéo de l'intra
 int main()
 {
     {

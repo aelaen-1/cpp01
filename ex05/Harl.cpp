@@ -7,7 +7,7 @@ void    Harl::complain(std::string level)
 
     for (int i = 0; i < 4; ++i)
     {
-        if (level == levels[i]) // level.compare(levels[i]) == 0surcharges
+        if (level == levels[i]) // !(level.compare(levels[i])) ==> surcharges
         {
             (this->*levelFuncPtr[i])();
         }
